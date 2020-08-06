@@ -32,7 +32,7 @@ class Video extends React.Component {
   componentDidMount() {
     //const socket = io.connect();
     //const socket = io('/');
-    const socket = io.connect("https://master.d1h0dpw7d1syp4.amplifyapp.com");
+    const socket = io.connect("https://master.d1h0dpw7d1syp4.amplifyapp.com:8000");
     //const socket = io(process.env.REACT_APP_SIGNALING_SERVER);
     const component = this;
     this.setState({ socket });
