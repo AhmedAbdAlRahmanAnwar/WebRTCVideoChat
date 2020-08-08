@@ -5,7 +5,7 @@ export default class VideoCall {
   init = (stream, initiator) => {
     this.peer = new Peer({
       path: "/peerjs",
-      host: "https://master.d1h0dpw7d1syp4.amplifyapp.com",
+      host: "/",
       port: "443",
       initiator: initiator,
       stream: stream,
