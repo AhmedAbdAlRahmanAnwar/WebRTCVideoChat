@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 //var server = require('http').Server(app);
 //var io = require('socket.io')(server);
 
-server.listen(3330);
+server.listen(process.env.PORT || 3000);
 
 io.on('connection', function (socket) {
     socket.on('join', function (data) {
