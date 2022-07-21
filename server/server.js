@@ -16,7 +16,7 @@ app.use('/peerjs', peerServer);
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.redirect(`/${uuidV4()}`)
+  res.end()
 })
 
 
