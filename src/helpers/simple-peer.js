@@ -14,14 +14,16 @@ export default class VideoCall {
       config: {
         iceServers: [
            {
-             urls: "stun:numb.viagenie.ca",
-             username: "ahmedabdalrahman61@gmail.com",
-             credential: "1234512345",
+             // urls: "stun:numb.viagenie.ca",
+             urls: process.env.REACT_APP_STUN_SERVERS,
+             username: process.env.REACT_APP_TURN_USERNAME,
+             credential: process.env.REACT_APP_TURN_CREDENCIAL,
            },
            {
-             urls: "turn:numb.viagenie.ca",
-             username: "ahmedabdalrahman61@gmail.com",
-             credential: "1234512345",
+             // urls: "turn:numb.viagenie.ca",
+             urls: process.env.REACT_APP_TURN_SERVERS,
+             username: process.env.REACT_APP_TURN_USERNAME,
+             credential: process.env.REACT_APP_TURN_CREDENCIAL,
            },
          ],
       }
